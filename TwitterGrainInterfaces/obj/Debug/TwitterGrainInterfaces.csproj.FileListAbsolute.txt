@@ -1,0 +1,13 @@
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\TwitterGrainInterfaces.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\TwitterGrainInterfaces.pdb
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Orleans.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Microsoft.Data.Edm.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Microsoft.Data.OData.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\System.Spatial.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\bin\Debug\Orleans.xml
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\obj\Debug\TwitterGrainInterfaces.csprojResolveAssemblyReference.cache
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\obj\Debug\TwitterGrainInterfaces.dll
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\obj\Debug\TwitterGrainInterfaces.pdb

@@ -1,0 +1,2 @@
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterClient\obj\Debug\TwitterClient.njsprojResolveAssemblyReference.cache
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterClient\bin\Microsoft.NodejsTools.WebRole.dll

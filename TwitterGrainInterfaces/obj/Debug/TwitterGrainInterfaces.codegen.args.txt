@@ -1,0 +1,28 @@
+/nomerge
+/in:obj\Debug\TwitterGrainInterfaces.dll
+/key:
+/d:DEBUG;TRACE
+/rns:TwitterGrainInterfaces
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
+/r:C:\Microsoft Project Orleans SDK v1.0\SDK\Binaries\OrleansClient\Orleans.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll
+/fsharp:C:\Program Files (x86)\MSBuild\..\Microsoft SDKs\F#\3.1\Framework\v4.0\fsc.exe
+/cwd:C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\
+/config:Debug
+/OptionExplicit:
+/OptionCompare:
+/OptionStrict:
+/OptionInfer:
+/MyType:
+/src:ICounter.cs
+/src:ITweetGrain.cs
+/src:IHashtagGrain.cs
+/src:Properties\orleans.codegen.cs
+/src:Properties\AssemblyInfo.cs
+/src:Totals.cs
