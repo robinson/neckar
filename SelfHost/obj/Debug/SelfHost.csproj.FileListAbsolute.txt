@@ -43,3 +43,4 @@ C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\SelfHost\bi
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\SelfHost\obj\Debug\SelfHost.csprojResolveAssemblyReference.cache
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\SelfHost\obj\Debug\SelfHost.exe
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\SelfHost\obj\Debug\SelfHost.pdb
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\SelfHost\obj\Debug\SelfHost.csproj.App.config

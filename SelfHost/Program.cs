@@ -7,11 +7,14 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Tweetinvi;
 using Tweetinvi.Core.Enum;
 using Tweetinvi.Core.Interfaces.Models;
+using System.Threading;
 
 namespace SelfHost
 {
@@ -60,6 +63,8 @@ namespace SelfHost
                     var globalStreamGroupName = "Global";
 
                     var stream = Stream.CreateFilteredStream();
+                    //stream.AddTrack("lol"); //test purpose
+                    //stream.AddTrack("me");
                     stream.AddLocation(Geo.GenerateLocation(-180, -90, 180, 90));
                     var tweetCount = 0;
                     var timer = Stopwatch.StartNew();
@@ -70,7 +75,7 @@ namespace SelfHost
                         var tweet = args.Tweet;
                         if (timer.ElapsedMilliseconds > 1000)
                         {
-                            if (tweet.Coordinates != null)
+                            if (tweet.Coordinates != null )
                             {
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("\n{0}: {1} {2}", tweet.Id, tweet.Language.ToString(), tweet.Text);
@@ -79,7 +84,10 @@ namespace SelfHost
                             }
 
                             timer.Restart();
-                            Console.WriteLine("\tTweets/sec: {0}", tweetCount);
+                            //if (tweet.Text.Contains("legross"))
+                            //{
+                                Console.WriteLine("\tTweets/sec: {0}", tweetCount);
+                            //}
                             tweetCount = 0;
                         }
 
@@ -96,6 +104,21 @@ namespace SelfHost
 
                         ////broadcast tweet to global stream subscribers
                         clients.Group(globalStreamGroupName).broadcastTweet(tweetModel);
+                        string tweetHashTag = string.Empty;
+                        if (tweet.Hashtags != null)
+                            foreach (var tag in tweet.Hashtags)
+                            {
+                                tweetHashTag += tag.Text + ",";
+                            }
+                        if (tweetHashTag == "")
+                        {
+                            tweetHashTag = "none";
+                        }
+                        else
+                        {
+                            tweetHashTag = tweetHashTag.Remove(tweetHashTag.Length - 2);
+                        }
+                        PostTweetToClient(tweetText, tweetHashTag);
 
                     };
 
@@ -108,6 +131,30 @@ namespace SelfHost
                 }
             }
 
+        }
+        private static void PostTweetToClient(string tweetText, string tweetHashTag)
+        {
+            var sentiment = Sentiment.Instance;
+            var score = sentiment.GetScore(tweetText);
+            using (var client = new HttpClient())
+            {
+                var values = new Dictionary<string, string>
+                {
+                    { "tweet", tweetText }
+                };
+
+                var content = new FormUrlEncodedContent(values);
+
+                var response = client.PostAsync("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment, content);
+                //if (tweetText.Contains("legross"))
+                //{
+                    //var responseString = response.Content.ReadAsStringAsync();
+                    Console.WriteLine("[debug]post with url: " + "http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment);
+                //}
+            }
+            //Console.WriteLine ("Post tweet: " + tweetText + "hashtag: " + tweetHashTag + "score: " + score.Sentiment);
+            //WebRequest request = WebRequest.Create("http://localhost:5190/" + tweetHashTag + "//" + score.Sentiment);
+            //request.Method = "POST";
         }
     }
 

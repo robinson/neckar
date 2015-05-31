@@ -31,7 +31,7 @@ namespace WebApplication
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             //Task.Factory.StartNew(() => MatchingTweetReceived(this, EventArgs.Empty));
-            Task.Factory.StartNew(() => FireUpTheWork());
+            //Task.Factory.StartNew(() => FireUpTheWork());
             //Task.Factory.StartNew(() => Stream_FilteredStreamExample());
             //Task.Factory.StartNew(()  => new TwitterConnection());
             //Hieu: add service bus here
