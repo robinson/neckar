@@ -31,6 +31,7 @@ namespace SelfHost
             {
                 //Console.WriteLine("Server running on {0}", url);
                 TwitterCredentials.SetCredentials(_accessKey, _accessToken, _consumerKey, _consumerSecret);
+                //Task.Factory.StartNew(() => Stream_FilteredStreamExample());
                 Stream_FilteredStreamExample();
                 //Stream_SampleStreamExample();
             }
@@ -136,25 +137,35 @@ namespace SelfHost
         {
             var sentiment = Sentiment.Instance;
             var score = sentiment.GetScore(tweetText);
-            using (var client = new HttpClient())
-            {
-                var values = new Dictionary<string, string>
-                {
-                    { "tweet", tweetText }
-                };
+            //using (var client = new HttpClient())
+            //{
+            //    var values = new Dictionary<string, string>
+            //    {
+            //        { "tweet", tweetText }
+            //    };
 
-                var content = new FormUrlEncodedContent(values);
+            //    var content = new FormUrlEncodedContent(values);
 
-                var response = client.PostAsync("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment, content);
-                //if (tweetText.Contains("legross"))
-                //{
-                    //var responseString = response.Content.ReadAsStringAsync();
-                    Console.WriteLine("[debug]post with url: " + "http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment);
-                //}
-            }
+            //    var response = client.PostAsync("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment, content);
+                
+            //}
             //Console.WriteLine ("Post tweet: " + tweetText + "hashtag: " + tweetHashTag + "score: " + score.Sentiment);
-            //WebRequest request = WebRequest.Create("http://localhost:5190/" + tweetHashTag + "//" + score.Sentiment);
-            //request.Method = "POST";
+            var request = (HttpWebRequest)WebRequest.Create("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment.ToString());
+
+            var postData = "tweet=" + tweetText;
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+            //var response = (HttpWebResponse)request.GetResponse();
+
+            //var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
         }
     }
 

@@ -33,3 +33,4 @@ C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterWebA
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterWebApplication\obj\Debug\TwitterWebApplication.csprojResolveAssemblyReference.cache
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterWebApplication\obj\Debug\TwitterWebApplication.dll
 C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterWebApplication\obj\Debug\TwitterWebApplication.pdb
+C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterWebApplication\bin\Owin.dll

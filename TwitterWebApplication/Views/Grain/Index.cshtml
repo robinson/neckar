@@ -37,3 +37,29 @@
         {{/each}}
     </table>
 </script>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">Hieu Le</a>
+        </div>
+    </div>
+</div>
+<div id="main" class="container">
+
+    <div id="connection-control-panel" class="row">
+        <div class="span12">
+            <button id="startBtn" class="btn btn-small" type="button"><i class="icon-play"></i> Start</button>
+            <button id="stopBtn" class="btn btn-small" type="button"><i class="icon-stop"></i> Stop</button>
+            <div class="pull-right"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="map-holder" class="span8">
+            <div id="map_canvas"></div>
+        </div>
+        <div id="messages-holder" class="span4">
+            <ul id="messages"></ul>
+        </div>
+    </div>
+</div>
