@@ -30,7 +30,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace SelfHost
+namespace Kirnau.Social.Twitter.Adapter
 {
     public class Sentiment
     {

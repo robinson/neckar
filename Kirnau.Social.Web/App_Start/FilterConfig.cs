@@ -17,7 +17,7 @@
 using System.Web;
 using System.Web.Mvc;
 
-namespace TwitterWebApplication
+namespace Kirnau.Social.Web
 {
     public class FilterConfig
     {

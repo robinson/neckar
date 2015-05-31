@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using TwitterGrainInterfaces;
+using Kirnau.Social.TwitterGrainInterfaces;
 
-namespace TwitterWebApplication.Controllers
+namespace Kirnau.Social.Web.Controllers
 {
     public class GrainController : Controller
     {

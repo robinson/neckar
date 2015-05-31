@@ -18,9 +18,9 @@ using Orleans.Concurrency;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TwitterGrainInterfaces;
+using Kirnau.Social.TwitterGrainInterfaces;
 
-namespace Grains
+namespace Kirnau.Social.TwitterGrains
 {
     /// <summary>
     /// This grain acts as the API into the hashtag grain, and allows you to set the score of multiple hashtags at once

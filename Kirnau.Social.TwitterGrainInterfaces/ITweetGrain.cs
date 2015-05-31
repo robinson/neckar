@@ -18,7 +18,7 @@ using Orleans;
 using Orleans.Concurrency;
 using System.Threading.Tasks;
 
-namespace TwitterGrainInterfaces
+namespace Kirnau.Social.TwitterGrainInterfaces
 {
     /// <summary>
     /// A grain to act as the API into Orleans, and fan out read/writes to multiple hashtag grains

@@ -1,7 +1,0 @@
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\bin\Debug\TwitterGrains.dll
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\bin\Debug\TwitterGrains.pdb
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\bin\Debug\TwitterGrainInterfaces.dll
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\bin\Debug\TwitterGrainInterfaces.pdb
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\obj\Debug\TwitterGrains.csprojResolveAssemblyReference.cache
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\obj\Debug\TwitterGrains.dll
-C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrains\obj\Debug\TwitterGrains.pdb

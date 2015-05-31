@@ -15,13 +15,13 @@
 //*********************************************************
 
 using System.Threading.Tasks;
-using TwitterGrainInterfaces;
+using Kirnau.Social.TwitterGrainInterfaces;
 
 using Orleans;
 using Orleans.Providers;
 using Orleans.Concurrency;
 
-namespace TwitterGrains
+namespace Kirnau.Social.TwitterGrains
 {
 
     /// <summary>

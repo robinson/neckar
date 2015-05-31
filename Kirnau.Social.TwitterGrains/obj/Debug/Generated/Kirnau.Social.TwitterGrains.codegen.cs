@@ -14,7 +14,7 @@
 #pragma warning disable 1591
 #pragma warning disable 1998
 
-namespace TwitterGrains
+namespace Kirnau.Social.TwitterGrains
 {
     using System;
     using Orleans.CodeGeneration;
@@ -28,7 +28,7 @@ namespace TwitterGrains
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
     [SerializableAttribute()]
-    [global::Orleans.CodeGeneration.GrainStateAttribute("TwitterGrains.TwitterGrains.CounterGrain")]
+    [global::Orleans.CodeGeneration.GrainStateAttribute("Kirnau.Social.TwitterGrains.Kirnau.Social.TwitterGrains.CounterGrain")]
     public class CounterGrainState : global::Orleans.CodeGeneration.GrainState, ICounterState
     {
         
@@ -48,7 +48,7 @@ namespace TwitterGrains
             }
         
         public CounterGrainState() : 
-                base("TwitterGrains.CounterGrain")
+                base("Kirnau.Social.TwitterGrains.CounterGrain")
         {
             this.InitStateFields();
         }
@@ -91,7 +91,7 @@ namespace TwitterGrains
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
     [SerializableAttribute()]
-    [global::Orleans.CodeGeneration.GrainStateAttribute("TwitterGrains.TwitterGrains.HashtagGrain")]
+    [global::Orleans.CodeGeneration.GrainStateAttribute("Kirnau.Social.TwitterGrains.Kirnau.Social.TwitterGrains.HashtagGrain")]
     public class HashtagGrainState : global::Orleans.CodeGeneration.GrainState, ITotalsState
     {
         
@@ -129,7 +129,7 @@ namespace TwitterGrains
             }
         
         public HashtagGrainState() : 
-                base("TwitterGrains.HashtagGrain")
+                base("Kirnau.Social.TwitterGrains.HashtagGrain")
         {
             this.InitStateFields();
         }
@@ -180,15 +180,6 @@ namespace TwitterGrains
             return result;
         }
     }
-}
-namespace Grains
-{
-    using Orleans.CodeGeneration;
-    using Orleans;
-    using System;
-    using System.Runtime.InteropServices;
-    using System.Runtime.Serialization;
-    
 }
 #pragma warning restore 162
 #pragma warning restore 219

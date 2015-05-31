@@ -1,8 +1,9 @@
 /svr
-/in:obj\Debug\TwitterGrains.dll
+/in:obj\Debug\Kirnau.Social.TwitterGrains.dll
 /key:
 /d:DEBUG;TRACE
-/rns:TwitterGrains
+/rns:Kirnau.Social.TwitterGrains
+/r:C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Kirnau.Social.TwitterGrainInterfaces.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
 /r:C:\Microsoft Project Orleans SDK v1.0\SDK\Binaries\OrleansClient\Orleans.dll

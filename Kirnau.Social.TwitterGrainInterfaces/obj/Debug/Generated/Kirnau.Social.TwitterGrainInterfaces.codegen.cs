@@ -14,7 +14,7 @@
 #pragma warning disable 1591
 #pragma warning disable 1998
 
-namespace TwitterGrainInterfaces
+namespace Kirnau.Social.TwitterGrainInterfaces
 {
     using System;
     using System.Net;
@@ -24,7 +24,7 @@ namespace TwitterGrainInterfaces
     using System.Collections.Generic;
     using System.Reflection;
     using Orleans.Serialization;
-    using TwitterGrainInterfaces;
+    using Kirnau.Social.TwitterGrainInterfaces;
     using Orleans;
     using Orleans.Runtime;
     using System.Collections;
@@ -36,27 +36,27 @@ namespace TwitterGrainInterfaces
     {
         
 
-                        public static TwitterGrainInterfaces.ICounter GetGrain(long primaryKey)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ICounter GetGrain(long primaryKey)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ICounter), -1196808756, primaryKey));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ICounter), 600369071, primaryKey));
                         }
 
-                        public static TwitterGrainInterfaces.ICounter GetGrain(long primaryKey, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ICounter GetGrain(long primaryKey, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ICounter), -1196808756, primaryKey, grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ICounter), 600369071, primaryKey, grainClassNamePrefix));
                         }
 
-                        public static TwitterGrainInterfaces.ICounter GetGrain(System.Guid primaryKey)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ICounter GetGrain(System.Guid primaryKey)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ICounter), -1196808756, primaryKey));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ICounter), 600369071, primaryKey));
                         }
 
-                        public static TwitterGrainInterfaces.ICounter GetGrain(System.Guid primaryKey, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ICounter GetGrain(System.Guid primaryKey, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ICounter), -1196808756, primaryKey, grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ICounter), 600369071, primaryKey, grainClassNamePrefix));
                         }
 
-            public static TwitterGrainInterfaces.ICounter Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.ICounter Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
                 return CounterReference.Cast(grainRef);
@@ -65,15 +65,16 @@ namespace TwitterGrainInterfaces
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
         [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
         [System.SerializableAttribute()]
-        [global::Orleans.CodeGeneration.GrainReferenceAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.ICounter")]
-        internal class CounterReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, TwitterGrainInterfaces.ICounter
+        [global::Orleans.CodeGeneration.GrainReferenceAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ICounte" +
+            "r")]
+        internal class CounterReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, Kirnau.Social.TwitterGrainInterfaces.ICounter
         {
             
 
-            public static TwitterGrainInterfaces.ICounter Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.ICounter Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
-                return (TwitterGrainInterfaces.ICounter) global::Orleans.Runtime.GrainReference.CastInternal(typeof(TwitterGrainInterfaces.ICounter), (global::Orleans.Runtime.GrainReference gr) => { return new CounterReference(gr);}, grainRef, -1196808756);
+                return (Kirnau.Social.TwitterGrainInterfaces.ICounter) global::Orleans.Runtime.GrainReference.CastInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ICounter), (global::Orleans.Runtime.GrainReference gr) => { return new CounterReference(gr);}, grainRef, 600369071);
             }
             
             protected internal CounterReference(global::Orleans.Runtime.GrainReference reference) : 
@@ -90,7 +91,7 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return -1196808756;
+                    return 600369071;
                 }
             }
             
@@ -98,7 +99,8 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return "TwitterGrainInterfaces.TwitterGrainInterfaces.ICounter";
+                    return "Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ICounte" +
+                        "r";
                 }
             }
             
@@ -132,19 +134,19 @@ namespace TwitterGrainInterfaces
                 return CounterMethodInvoker.GetMethodName(interfaceId, methodId);
             }
             
-            System.Threading.Tasks.Task TwitterGrainInterfaces.ICounter.IncrementCounter()
+            System.Threading.Tasks.Task Kirnau.Social.TwitterGrainInterfaces.ICounter.IncrementCounter()
             {
 
                 return base.InvokeMethodAsync<object>(732981053, new object[] {} );
             }
             
-            System.Threading.Tasks.Task TwitterGrainInterfaces.ICounter.ResetCounter()
+            System.Threading.Tasks.Task Kirnau.Social.TwitterGrainInterfaces.ICounter.ResetCounter()
             {
 
                 return base.InvokeMethodAsync<object>(1574597839, new object[] {} );
             }
             
-            System.Threading.Tasks.Task<int> TwitterGrainInterfaces.ICounter.GetTotalCounter()
+            System.Threading.Tasks.Task<int> Kirnau.Social.TwitterGrainInterfaces.ICounter.GetTotalCounter()
             {
 
                 return base.InvokeMethodAsync<System.Int32>(-1311190982, new object[] {} );
@@ -154,7 +156,8 @@ namespace TwitterGrainInterfaces
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
-    [global::Orleans.CodeGeneration.MethodInvokerAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.ICounter", -1196808756)]
+    [global::Orleans.CodeGeneration.MethodInvokerAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ICounte" +
+        "r", 600369071)]
     internal class CounterMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
     {
         
@@ -162,7 +165,7 @@ namespace TwitterGrainInterfaces
         {
             get
             {
-                return -1196808756;
+                return 600369071;
             }
         }
         
@@ -173,7 +176,7 @@ namespace TwitterGrainInterfaces
             {                    if (grain == null) throw new System.ArgumentNullException("grain");
                 switch (interfaceId)
                 {
-                    case -1196808756:  // ICounter
+                    case 600369071:  // ICounter
                         switch (methodId)
                         {
                             case 732981053: 
@@ -203,7 +206,7 @@ namespace TwitterGrainInterfaces
             switch (interfaceId)
             {
                 
-                case -1196808756:  // ICounter
+                case 600369071:  // ICounter
                     switch (methodId)
                     {
                         case 732981053:
@@ -229,27 +232,27 @@ namespace TwitterGrainInterfaces
     {
         
 
-                        public static TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(long primaryKey)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(long primaryKey)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ITweetDispatcherGrain), -52569496, primaryKey));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain), 671436787, primaryKey));
                         }
 
-                        public static TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(long primaryKey, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(long primaryKey, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ITweetDispatcherGrain), -52569496, primaryKey, grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain), 671436787, primaryKey, grainClassNamePrefix));
                         }
 
-                        public static TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(System.Guid primaryKey)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(System.Guid primaryKey)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ITweetDispatcherGrain), -52569496, primaryKey));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain), 671436787, primaryKey));
                         }
 
-                        public static TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(System.Guid primaryKey, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain GetGrain(System.Guid primaryKey, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(TwitterGrainInterfaces.ITweetDispatcherGrain), -52569496, primaryKey, grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain), 671436787, primaryKey, grainClassNamePrefix));
                         }
 
-            public static TwitterGrainInterfaces.ITweetDispatcherGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
                 return TweetDispatcherGrainReference.Cast(grainRef);
@@ -258,15 +261,16 @@ namespace TwitterGrainInterfaces
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
         [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
         [System.SerializableAttribute()]
-        [global::Orleans.CodeGeneration.GrainReferenceAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.ITweetDispatcherGrain")]
-        internal class TweetDispatcherGrainReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, TwitterGrainInterfaces.ITweetDispatcherGrain
+        [global::Orleans.CodeGeneration.GrainReferenceAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ITweetD" +
+            "ispatcherGrain")]
+        internal class TweetDispatcherGrainReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain
         {
             
 
-            public static TwitterGrainInterfaces.ITweetDispatcherGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
-                return (TwitterGrainInterfaces.ITweetDispatcherGrain) global::Orleans.Runtime.GrainReference.CastInternal(typeof(TwitterGrainInterfaces.ITweetDispatcherGrain), (global::Orleans.Runtime.GrainReference gr) => { return new TweetDispatcherGrainReference(gr);}, grainRef, -52569496);
+                return (Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain) global::Orleans.Runtime.GrainReference.CastInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain), (global::Orleans.Runtime.GrainReference gr) => { return new TweetDispatcherGrainReference(gr);}, grainRef, 671436787);
             }
             
             protected internal TweetDispatcherGrainReference(global::Orleans.Runtime.GrainReference reference) : 
@@ -283,7 +287,7 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return -52569496;
+                    return 671436787;
                 }
             }
             
@@ -291,7 +295,8 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return "TwitterGrainInterfaces.TwitterGrainInterfaces.ITweetDispatcherGrain";
+                    return "Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ITweetD" +
+                        "ispatcherGrain";
                 }
             }
             
@@ -325,23 +330,24 @@ namespace TwitterGrainInterfaces
                 return TweetDispatcherGrainMethodInvoker.GetMethodName(interfaceId, methodId);
             }
             
-            System.Threading.Tasks.Task TwitterGrainInterfaces.ITweetDispatcherGrain.AddScore(int @score, string[] @hashtags, string @tweet)
+            System.Threading.Tasks.Task Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain.AddScore(int @score, string[] @hashtags, string @tweet)
             {
 
                 return base.InvokeMethodAsync<object>(-997505293, new object[] {@score, @hashtags, @tweet} );
             }
             
-            System.Threading.Tasks.Task<TwitterGrainInterfaces.Totals[]> TwitterGrainInterfaces.ITweetDispatcherGrain.GetTotals(string[] @hashtags)
+            System.Threading.Tasks.Task<Kirnau.Social.TwitterGrainInterfaces.Totals[]> Kirnau.Social.TwitterGrainInterfaces.ITweetDispatcherGrain.GetTotals(string[] @hashtags)
             {
 
-                return base.InvokeMethodAsync<TwitterGrainInterfaces.Totals[]>(1690947172, new object[] {@hashtags} );
+                return base.InvokeMethodAsync<Kirnau.Social.TwitterGrainInterfaces.Totals[]>(1690947172, new object[] {@hashtags} );
             }
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
-    [global::Orleans.CodeGeneration.MethodInvokerAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.ITweetDispatcherGrain", -52569496)]
+    [global::Orleans.CodeGeneration.MethodInvokerAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.ITweetD" +
+        "ispatcherGrain", 671436787)]
     internal class TweetDispatcherGrainMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
     {
         
@@ -349,7 +355,7 @@ namespace TwitterGrainInterfaces
         {
             get
             {
-                return -52569496;
+                return 671436787;
             }
         }
         
@@ -360,7 +366,7 @@ namespace TwitterGrainInterfaces
             {                    if (grain == null) throw new System.ArgumentNullException("grain");
                 switch (interfaceId)
                 {
-                    case -52569496:  // ITweetDispatcherGrain
+                    case 671436787:  // ITweetDispatcherGrain
                         switch (methodId)
                         {
                             case -997505293: 
@@ -388,7 +394,7 @@ namespace TwitterGrainInterfaces
             switch (interfaceId)
             {
                 
-                case -52569496:  // ITweetDispatcherGrain
+                case 671436787:  // ITweetDispatcherGrain
                     switch (methodId)
                     {
                         case -997505293:
@@ -412,27 +418,27 @@ namespace TwitterGrainInterfaces
     {
         
 
-                        public static TwitterGrainInterfaces.IHashtagGrain GetGrain(long primaryKey, string keyExt)
+                        public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain GetGrain(long primaryKey, string keyExt)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(TwitterGrainInterfaces.IHashtagGrain), 1848443735, primaryKey, keyExt));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain), -285330679, primaryKey, keyExt));
                         }
 
-                        public static TwitterGrainInterfaces.IHashtagGrain GetGrain(long primaryKey, string keyExt, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain GetGrain(long primaryKey, string keyExt, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(TwitterGrainInterfaces.IHashtagGrain), 1848443735, primaryKey, keyExt, grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain), -285330679, primaryKey, keyExt, grainClassNamePrefix));
                         }
 
-                        public static TwitterGrainInterfaces.IHashtagGrain GetGrain(System.Guid primaryKey, string keyExt)
+                        public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain GetGrain(System.Guid primaryKey, string keyExt)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(TwitterGrainInterfaces.IHashtagGrain), 1848443735, primaryKey, keyExt));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain), -285330679, primaryKey, keyExt));
                         }
 
-                        public static TwitterGrainInterfaces.IHashtagGrain GetGrain(System.Guid primaryKey, string keyExt, string grainClassNamePrefix)
+                        public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain GetGrain(System.Guid primaryKey, string keyExt, string grainClassNamePrefix)
                         {
-                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(TwitterGrainInterfaces.IHashtagGrain), 1848443735, primaryKey, keyExt,grainClassNamePrefix));
+                            return Cast(global::Orleans.CodeGeneration.GrainFactoryBase.MakeKeyExtendedGrainReferenceInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain), -285330679, primaryKey, keyExt,grainClassNamePrefix));
                         }
 
-            public static TwitterGrainInterfaces.IHashtagGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
                 return HashtagGrainReference.Cast(grainRef);
@@ -441,15 +447,16 @@ namespace TwitterGrainInterfaces
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
         [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
         [System.SerializableAttribute()]
-        [global::Orleans.CodeGeneration.GrainReferenceAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.IHashtagGrain")]
-        internal class HashtagGrainReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, TwitterGrainInterfaces.IHashtagGrain
+        [global::Orleans.CodeGeneration.GrainReferenceAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.IHashta" +
+            "gGrain")]
+        internal class HashtagGrainReference : global::Orleans.Runtime.GrainReference, global::Orleans.Runtime.IAddressable, Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain
         {
             
 
-            public static TwitterGrainInterfaces.IHashtagGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
+            public static Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain Cast(global::Orleans.Runtime.IAddressable grainRef)
             {
                 
-                return (TwitterGrainInterfaces.IHashtagGrain) global::Orleans.Runtime.GrainReference.CastInternal(typeof(TwitterGrainInterfaces.IHashtagGrain), (global::Orleans.Runtime.GrainReference gr) => { return new HashtagGrainReference(gr);}, grainRef, 1848443735);
+                return (Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain) global::Orleans.Runtime.GrainReference.CastInternal(typeof(Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain), (global::Orleans.Runtime.GrainReference gr) => { return new HashtagGrainReference(gr);}, grainRef, -285330679);
             }
             
             protected internal HashtagGrainReference(global::Orleans.Runtime.GrainReference reference) : 
@@ -466,7 +473,7 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return 1848443735;
+                    return -285330679;
                 }
             }
             
@@ -474,7 +481,8 @@ namespace TwitterGrainInterfaces
             {
                 get
                 {
-                    return "TwitterGrainInterfaces.TwitterGrainInterfaces.IHashtagGrain";
+                    return "Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.IHashta" +
+                        "gGrain";
                 }
             }
             
@@ -508,23 +516,24 @@ namespace TwitterGrainInterfaces
                 return HashtagGrainMethodInvoker.GetMethodName(interfaceId, methodId);
             }
             
-            System.Threading.Tasks.Task TwitterGrainInterfaces.IHashtagGrain.AddScore(int @score, string @lastTweet)
+            System.Threading.Tasks.Task Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain.AddScore(int @score, string @lastTweet)
             {
 
                 return base.InvokeMethodAsync<object>(-1303993644, new object[] {@score, @lastTweet} );
             }
             
-            System.Threading.Tasks.Task<TwitterGrainInterfaces.Totals> TwitterGrainInterfaces.IHashtagGrain.GetTotals()
+            System.Threading.Tasks.Task<Kirnau.Social.TwitterGrainInterfaces.Totals> Kirnau.Social.TwitterGrainInterfaces.IHashtagGrain.GetTotals()
             {
 
-                return base.InvokeMethodAsync<TwitterGrainInterfaces.Totals>(-2004439872, new object[] {} );
+                return base.InvokeMethodAsync<Kirnau.Social.TwitterGrainInterfaces.Totals>(-2004439872, new object[] {} );
             }
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
-    [global::Orleans.CodeGeneration.MethodInvokerAttribute("TwitterGrainInterfaces.TwitterGrainInterfaces.IHashtagGrain", 1848443735)]
+    [global::Orleans.CodeGeneration.MethodInvokerAttribute("Kirnau.Social.TwitterGrainInterfaces.Kirnau.Social.TwitterGrainInterfaces.IHashta" +
+        "gGrain", -285330679)]
     internal class HashtagGrainMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
     {
         
@@ -532,7 +541,7 @@ namespace TwitterGrainInterfaces
         {
             get
             {
-                return 1848443735;
+                return -285330679;
             }
         }
         
@@ -543,7 +552,7 @@ namespace TwitterGrainInterfaces
             {                    if (grain == null) throw new System.ArgumentNullException("grain");
                 switch (interfaceId)
                 {
-                    case 1848443735:  // IHashtagGrain
+                    case -285330679:  // IHashtagGrain
                         switch (methodId)
                         {
                             case -1303993644: 
@@ -571,7 +580,7 @@ namespace TwitterGrainInterfaces
             switch (interfaceId)
             {
                 
-                case 1848443735:  // IHashtagGrain
+                case -285330679:  // IHashtagGrain
                     switch (methodId)
                     {
                         case -1303993644:
@@ -592,18 +601,18 @@ namespace TwitterGrainInterfaces
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Orleans-CodeGenerator", "1.0.0.0")]
     [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute()]
     [global::Orleans.CodeGeneration.RegisterSerializerAttribute()]
-    internal class TwitterGrainInterfaces_TotalsSerialization
+    internal class Kirnau_Social_TwitterGrainInterfaces_TotalsSerialization
     {
         
-        static TwitterGrainInterfaces_TotalsSerialization()
+        static Kirnau_Social_TwitterGrainInterfaces_TotalsSerialization()
         {
             Register();
         }
         
         public static object DeepCopier(object original)
         {
-            TwitterGrainInterfaces.Totals input = ((TwitterGrainInterfaces.Totals)(original));
-            TwitterGrainInterfaces.Totals result = new TwitterGrainInterfaces.Totals();
+            Kirnau.Social.TwitterGrainInterfaces.Totals input = ((Kirnau.Social.TwitterGrainInterfaces.Totals)(original));
+            Kirnau.Social.TwitterGrainInterfaces.Totals result = new Kirnau.Social.TwitterGrainInterfaces.Totals();
             Orleans.Serialization.SerializationContext.Current.RecordObject(original, result);
             result.Hashtag = input.Hashtag;
             result.LastTweet = input.LastTweet;
@@ -616,7 +625,7 @@ namespace TwitterGrainInterfaces
         
         public static void Serializer(object untypedInput, Orleans.Serialization.BinaryTokenStreamWriter stream, System.Type expected)
         {
-            TwitterGrainInterfaces.Totals input = ((TwitterGrainInterfaces.Totals)(untypedInput));
+            Kirnau.Social.TwitterGrainInterfaces.Totals input = ((Kirnau.Social.TwitterGrainInterfaces.Totals)(untypedInput));
             Orleans.Serialization.SerializationManager.SerializeInner(input.Hashtag, stream, typeof(string));
             Orleans.Serialization.SerializationManager.SerializeInner(input.LastTweet, stream, typeof(string));
             Orleans.Serialization.SerializationManager.SerializeInner(input.LastUpdated, stream, typeof(System.DateTime));
@@ -627,7 +636,7 @@ namespace TwitterGrainInterfaces
         
         public static object Deserializer(System.Type expected, global::Orleans.Serialization.BinaryTokenStreamReader stream)
         {
-            TwitterGrainInterfaces.Totals result = new TwitterGrainInterfaces.Totals();
+            Kirnau.Social.TwitterGrainInterfaces.Totals result = new Kirnau.Social.TwitterGrainInterfaces.Totals();
             result.Hashtag = ((string)(Orleans.Serialization.SerializationManager.DeserializeInner(typeof(string), stream)));
             result.LastTweet = ((string)(Orleans.Serialization.SerializationManager.DeserializeInner(typeof(string), stream)));
             result.LastUpdated = ((System.DateTime)(Orleans.Serialization.SerializationManager.DeserializeInner(typeof(System.DateTime), stream)));
@@ -639,7 +648,7 @@ namespace TwitterGrainInterfaces
         
         public static void Register()
         {
-            global::Orleans.Serialization.SerializationManager.Register(typeof(TwitterGrainInterfaces.Totals), DeepCopier, Serializer, Deserializer);
+            global::Orleans.Serialization.SerializationManager.Register(typeof(Kirnau.Social.TwitterGrainInterfaces.Totals), DeepCopier, Serializer, Deserializer);
         }
     }
 }

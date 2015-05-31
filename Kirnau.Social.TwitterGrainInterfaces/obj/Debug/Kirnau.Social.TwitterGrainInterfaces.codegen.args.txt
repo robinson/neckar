@@ -1,8 +1,8 @@
 /nomerge
-/in:obj\Debug\TwitterGrainInterfaces.dll
+/in:obj\Debug\Kirnau.Social.TwitterGrainInterfaces.dll
 /key:
 /d:DEBUG;TRACE
-/rns:TwitterGrainInterfaces
+/rns:Kirnau.Social.TwitterGrainInterfaces
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
 /r:C:\Microsoft Project Orleans SDK v1.0\SDK\Binaries\OrleansClient\Orleans.dll
@@ -13,7 +13,7 @@
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll
 /fsharp:C:\Program Files (x86)\MSBuild\..\Microsoft SDKs\F#\3.1\Framework\v4.0\fsc.exe
-/cwd:C:\Temp\Azure\Social Network\orleans-master\Samples\TwitterSentiment\TwitterGrainInterfaces\
+/cwd:C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\
 /config:Debug
 /OptionExplicit:
 /OptionCompare:

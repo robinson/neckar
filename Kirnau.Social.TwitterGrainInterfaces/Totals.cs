@@ -16,7 +16,7 @@
 
 using System;
 
-namespace TwitterGrainInterfaces
+namespace Kirnau.Social.TwitterGrainInterfaces
 {
     /// <summary>
     /// A DTO to return sentiment score for a hashtag 

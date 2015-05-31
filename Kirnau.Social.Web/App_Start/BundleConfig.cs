@@ -17,7 +17,7 @@
 using System.Web;
 using System.Web.Optimization;
 
-namespace TwitterWebApplication
+namespace Kirnau.Social.Web
 {
     public class BundleConfig
     {
@@ -38,10 +38,10 @@ namespace TwitterWebApplication
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
                       "~/Scripts/jquery.signalR-2.2.0.js",
                       "~/Scripts/knockout-3.3.0.js",
-                      "~/SignalR/Hubs",
                       "~/Scripts/toastr.js"));
 
 

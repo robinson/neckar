@@ -22,7 +22,7 @@ using System.Threading.Tasks;
 using Orleans;
 
 
-namespace TwitterGrainInterfaces
+namespace Kirnau.Social.TwitterGrainInterfaces
 {
     /// <summary>
     /// A grain to keep track of the total number of hashtag grain activations

@@ -16,12 +16,12 @@
 
 using System;
 using System.Threading.Tasks;
-using TwitterGrainInterfaces;
+using Kirnau.Social.TwitterGrainInterfaces;
 
 using Orleans;
 using Orleans.Providers;
 
-namespace TwitterGrains
+namespace Kirnau.Social.TwitterGrains
 {
     /// <summary>
     /// interface defining the persistent state for hashtag grain

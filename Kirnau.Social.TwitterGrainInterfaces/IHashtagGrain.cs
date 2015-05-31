@@ -17,7 +17,7 @@
 using Orleans;
 using System.Threading.Tasks;
 
-namespace TwitterGrainInterfaces
+namespace Kirnau.Social.TwitterGrainInterfaces
 {
 
     /// <summary>

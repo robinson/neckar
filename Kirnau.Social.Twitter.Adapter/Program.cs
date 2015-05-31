@@ -16,7 +16,7 @@ using Tweetinvi.Core.Enum;
 using Tweetinvi.Core.Interfaces.Models;
 using System.Threading;
 
-namespace SelfHost
+namespace Kirnau.Social.Twitter.Adapter
 {
     class Program
     {
@@ -85,17 +85,14 @@ namespace SelfHost
                             }
 
                             timer.Restart();
-                            //if (tweet.Text.Contains("legross"))
-                            //{
-                                Console.WriteLine("\tTweets/sec: {0}", tweetCount);
-                            //}
+                            Console.WriteLine("\tTweets/sec: {0}", tweetCount);
                             tweetCount = 0;
                         }
 
                         var tweetText = tweet.Text;
                         var userScreenName = tweet.Creator.ScreenName;// tweetJToken["user"]["screen_name"].ToString();
                         var imageUrl = tweet.Creator.ProfileImageUrlHttps;//tweetJToken["user"]["profile_image_url_https"].ToString();
-                        var tweetModel = new Tweet() { TweetText = tweetText, User = userScreenName, ImageUrl = imageUrl };
+                        var tweetModel = new Kirnau.Social.Twitter.Adapter.Model.Tweet() { TweetText = tweetText, User = userScreenName, ImageUrl = imageUrl };
 
                         if (tweet.Coordinates != null)
                         {
@@ -137,20 +134,7 @@ namespace SelfHost
         {
             var sentiment = Sentiment.Instance;
             var score = sentiment.GetScore(tweetText);
-            //using (var client = new HttpClient())
-            //{
-            //    var values = new Dictionary<string, string>
-            //    {
-            //        { "tweet", tweetText }
-            //    };
-
-            //    var content = new FormUrlEncodedContent(values);
-
-            //    var response = client.PostAsync("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment, content);
-                
-            //}
-            //Console.WriteLine ("Post tweet: " + tweetText + "hashtag: " + tweetHashTag + "score: " + score.Sentiment);
-            var request = (HttpWebRequest)WebRequest.Create("http://localhost:5190/" + tweetHashTag + "/" + score.Sentiment.ToString());
+            var request = (HttpWebRequest)WebRequest.Create("http://localhost:5191/" + tweetHashTag + "/" + score.Sentiment.ToString());
 
             var postData = "tweet=" + tweetText;
             var data = Encoding.ASCII.GetBytes(postData);
@@ -169,69 +153,7 @@ namespace SelfHost
         }
     }
 
-    class Startup
-    {
-        public void Configuration(IAppBuilder app)
-        {
-            app.UseCors(CorsOptions.AllowAll);
-            app.MapSignalR();
-        }
-    }
-    public class TwitterHub : Hub
-    {
-        private static string[] _reservervedGroupNames = new[] { "Global" };
-
-        public void CancelStream()
-        {
-
-            //var cts = Global.State["cts"] as CancellationTokenSource;
-            //if (cts != null) {
-
-            //    cts.Cancel();
-            //}
-        }
-
-        public bool SubscribeToStreamGroup(string groupName)
-        {
-
-            if (_reservervedGroupNames.Any(x => x.Equals(groupName, StringComparison.OrdinalIgnoreCase)))
-            {
-                Groups.Add(Context.ConnectionId, groupName);
-                return true;
-            }
-            return false;
-        }
-
-        public void UnsubscribeFromStreamGroup(string groupName)
-        {
-
-            if (_reservervedGroupNames.Any(x => x.Equals(groupName, StringComparison.OrdinalIgnoreCase)))
-            {
-                Groups.Remove(Context.ConnectionId, groupName);
-            }
-        }
-    }
-    public class Tweet
-    {
-
-        public string User { get; set; }
-        public string TweetText { get; set; }
-        public string CreatedAt { get; set; }
-        public string ImageUrl { get; set; }
-        public string Location { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-        public double AverageSentimentTokens { get; set; }
-        public string TweetTextHtml
-        {
-
-            get
-            {
-
-                return (!string.IsNullOrEmpty(TweetText)) ?
-                    TweetText.ParseURL().ParseHashtag().ParseUsername() :
-                    TweetText;
-            }
-        }
-    }
+  
+  
+   
 }
