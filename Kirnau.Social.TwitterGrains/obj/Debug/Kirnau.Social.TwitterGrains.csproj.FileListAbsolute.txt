@@ -1,0 +1,7 @@
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\bin\Debug\Kirnau.Social.TwitterGrains.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\bin\Debug\Kirnau.Social.TwitterGrains.pdb
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\bin\Debug\Kirnau.Social.TwitterGrainInterfaces.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\bin\Debug\Kirnau.Social.TwitterGrainInterfaces.pdb
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\obj\Debug\Kirnau.Social.TwitterGrains.csprojResolveAssemblyReference.cache
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\obj\Debug\Kirnau.Social.TwitterGrains.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrains\obj\Debug\Kirnau.Social.TwitterGrains.pdb

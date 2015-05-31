@@ -1,0 +1,12 @@
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Kirnau.Social.TwitterGrainInterfaces.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Kirnau.Social.TwitterGrainInterfaces.pdb
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Orleans.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Microsoft.Data.Edm.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Microsoft.Data.OData.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\System.Spatial.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\bin\Debug\Orleans.xml
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\obj\Debug\Kirnau.Social.TwitterGrainInterfaces.dll
+C:\Temp\Azure\Social Network\Kirnau.Social\Kirnau.Social.TwitterGrainInterfaces\obj\Debug\Kirnau.Social.TwitterGrainInterfaces.pdb
